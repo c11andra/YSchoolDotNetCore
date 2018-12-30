@@ -1,3 +1,4 @@
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -6,17 +7,38 @@
     bottom: 0;
     left: 0;
     right: 0;
+
+     .extraspace{
+      flex:1;
+     }
+
+    .login{
+      background-color: transparent;
+    }
+
+    ul {
+      list-style-type: none;
+     // padding: 0;
+     // margin-right: 0;
+     // position:relative;
+      li{
+        display: block;
+        text-decoration: none;
+      }
+    }
   }
+
   
   .is-mobile .toolbar {
     position: fixed;
     /* Make sure the toolbar will stay on top of the content as it scrolls past. */
     z-index: 2;
   }
-  
-  h1.app-name {
+  .sidenav-brand{
+    text-decoration: none;
     margin-left: 8px;
   }
+  
   
   .sidenav-container {
     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
