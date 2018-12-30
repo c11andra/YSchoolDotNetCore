@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using YSchool.Management;
+using YSchool.Management.Interfaces;
 
 namespace YSchool.WebApi
 {
@@ -26,6 +28,8 @@ namespace YSchool.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddScoped<ISchool,School>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
