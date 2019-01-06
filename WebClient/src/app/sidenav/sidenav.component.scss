@@ -28,17 +28,25 @@
     }
   }
 
+  .toolbar{
+    z-index: 2;
+    box-shadow: 0 .5rem .75rem rgba(0, 0, 0, .3);
+  }
   
   .is-mobile .toolbar {
     position: fixed;
     /* Make sure the toolbar will stay on top of the content as it scrolls past. */
     z-index: 2;
+
   }
   .sidenav-brand{
     text-decoration: none;
     margin-left: 8px;
   }
-  
+
+  .sidenav-menu{
+    background-color:orange;
+  }
   
   .sidenav-container {
     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
