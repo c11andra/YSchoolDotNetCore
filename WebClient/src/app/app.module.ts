@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AllMaterialModule } from '../material-module';
 import { SideNavComponent } from './sidenav/sidenav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SideNavComponent } from './sidenav/sidenav.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AllMaterialModule
+    AllMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

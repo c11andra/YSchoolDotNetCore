@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SchoolService } from '../school.service';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  
+  school:object;
+  constructor(private schoolService:SchoolService) 
+  { 
+    this.schoolService = schoolService;
+  }
 
   ngOnInit() {
+    this.schoolService.getSchool().subscribe(
+      s=>this.school=s
+      );
   }
 
 }

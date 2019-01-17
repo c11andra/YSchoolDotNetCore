@@ -1,3 +1,9 @@
-<p>
-  Portal for managing students
-</p>
+<p *ngIf ="school === null">Loading..</p>
+
+<div *ngIf ="school != null">
+<h1>
+  {{school.name}} 
+</h1>
+
+<p>{{school.about}}</p>
+</div>
