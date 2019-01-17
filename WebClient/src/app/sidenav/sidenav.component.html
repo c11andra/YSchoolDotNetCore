@@ -9,7 +9,7 @@
     <span class="extraspace"></span>
     <ul>
       <li>
-        <mat-icon class='login'>person</mat-icon>
+        <mat-icon class='login'>account_circle</mat-icon>
       </li>
     </ul>
 
@@ -20,9 +20,9 @@
     <mat-sidenav class = "sidenav-menu" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
       fixedTopGap="56">
       <mat-nav-list>
-        <a mat-list-item routerLink="/home">Home</a>
-        <a mat-list-item routerLink="/contact">Contact</a>
-        <a mat-list-item routerLink="/about">About</a>
+        <a mat-list-item routerLink="/home"> <mat-icon class='login'>home</mat-icon></a>
+        <a mat-list-item routerLink="/contact"> <mat-icon class='login'>contacts</mat-icon></a>
+        <a mat-list-item routerLink="/about"> <mat-icon class='login'>help</mat-icon></a>
       </mat-nav-list>
     </mat-sidenav>
 
