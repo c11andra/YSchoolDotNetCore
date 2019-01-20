@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AllMaterialModule } from '../material-module';
 import { SideNavComponent } from './sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignInComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ContactSupportComponent,
     AboutComponent,
-    SideNavComponent
+    SideNavComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

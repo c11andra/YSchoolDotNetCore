@@ -9,10 +9,10 @@
     <span class="extraspace"></span>
     <ul>
       <li>
-        <mat-icon class='login' *ngIf="isLoggedIn">account_circle</mat-icon>
+        <mat-icon class='loggedin' *ngIf="isLoggedIn">account_circle</mat-icon>
       </li>
-      <li *ngIf="!isLoggedIn" >
-          <button mat-raised-button color="accent">Sign In</button>
+      <li *ngIf="!isLoggedIn && !isSigningIn" >
+          <a routerLink="/signin"><button mat-raised-button color="accent">Sign In</button></a>
       </li>
     </ul>
 
