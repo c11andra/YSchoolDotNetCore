@@ -8,10 +8,11 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 })
 export class SideNavComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
-
+  isLoggedIn:boolean;
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.isLoggedIn = false;
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);

@@ -9,7 +9,10 @@
     <span class="extraspace"></span>
     <ul>
       <li>
-        <mat-icon class='login'>account_circle</mat-icon>
+        <mat-icon class='login' *ngIf="isLoggedIn">account_circle</mat-icon>
+      </li>
+      <li *ngIf="!isLoggedIn" >
+          <button mat-raised-button color="accent">Sign In</button>
       </li>
     </ul>
 
@@ -32,7 +35,7 @@
       </mat-nav-list>
     </mat-sidenav>
 
-    <mat-sidenav-content>
+    <mat-sidenav-content (click)="snav.close()">
       <router-outlet></router-outlet>
     </mat-sidenav-content>
 
