@@ -6,20 +6,22 @@ import { ContactSupportComponent } from './contact-support/contact-support.compo
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path:'home',
-    component:HomeComponent
+    path: 'contact',
+    component: ContactSupportComponent
   },
   {
-    path:'contact',
-    component:ContactSupportComponent
-  },
-  {
-    path:'about',
-    component:AboutComponent
+    path: 'about',
+    component: AboutComponent
   },
 ];
 

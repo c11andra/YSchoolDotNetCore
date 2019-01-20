@@ -4,7 +4,7 @@
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <a [routerLink]="home" class="sidenav-brand">School Portal</a>
+    <a routerLink="/home" class="sidenav-brand">School Portal</a>
 
     <span class="extraspace"></span>
     <ul>
@@ -35,7 +35,7 @@
       </mat-nav-list>
     </mat-sidenav>
 
-    <mat-sidenav-content (click)="snav.close()">
+    <mat-sidenav-content class="sidenav-content" (click)="snav.close()">
       <router-outlet></router-outlet>
     </mat-sidenav-content>
 
