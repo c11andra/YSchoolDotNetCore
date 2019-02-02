@@ -11,6 +11,7 @@ import { AllMaterialModule } from '../material-module';
 import { SideNavComponent } from './sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignInComponent } from './signin/signin.component';
+import { ReactiveFormsModule }    from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SignInComponent } from './signin/signin.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AllMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
